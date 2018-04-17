@@ -237,7 +237,7 @@ while not game.over:
         if blooper[index].collidedWith(bullet):
             blooper[index].visible=False
         if Hero.health <1:
-            game.over = True
+            game.quit()
             move.play()
             Hero.visible=False
 '''
