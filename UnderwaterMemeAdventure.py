@@ -163,7 +163,8 @@ while not game.over:
     game.drawText("This game is very simple, just like any other side-scrolling shooter, arrow keys are", 100, 250)
     game.drawText("to move the hero. The space bar is to fire your bullets, and don't worry, you have unliimited ammo",100,270)
     game.drawText("Now thst you understand how to play, move your mouse and click play to start your adventure",100,300)
-
+    game.drawText("Also, when you beat the game, press spacebar to exit the game!!!!!!!",100,330)
+ 
     game.update(100)
 game.over=False
     
@@ -370,9 +371,9 @@ while not game.over:
 
     bk.draw()
 
-
+    if keys.Pressed[K_SPACE]: 
     game.drawText("WHOOOOOO, you just beat Euganda Knuckles and stopped communism",100,200,)
-    game.drawText("Here's your treasure!!",100,300,F)
+    
 
 
 
